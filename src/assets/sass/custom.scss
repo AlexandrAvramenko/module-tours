@@ -1,0 +1,166 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin-top: 200px;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  background: #ededed;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  background: #6c757d;
+
+  .btn {
+    border: 0;
+    border-radius: 0;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 992px) {
+      padding: 5px 10px;
+      font-size: .875rem;
+      line-height: 1.5;
+    }
+
+    &:hover {
+      background: #c8c8c8;
+      color: #585858;
+    }
+  }
+
+  .entrance {
+    background: #565656;
+
+    @media screen and (max-width: 375px) {
+      padding: 5px 8px;
+    }
+  }
+
+  .is-active {
+    background: #c8c8c8;
+    color: #585858;
+  }
+
+}
+
+.module-tours {
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
+
+  select {
+    opacity: .9;
+
+    @media screen and (max-width: 480px) {
+      font-size: .75rem;
+    }
+
+    &:focus {
+      border-color: #fff;
+      box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, .25);
+    }
+  }
+
+  label {
+    text-transform: uppercase;
+
+    @media screen and (max-width: 992px) {
+      font-size: .875rem;
+    }
+
+    @media screen and (max-width: 375px) {
+      font-size: .75rem;
+    }
+  }
+
+  .btn {
+    margin-top: 23px;
+  }
+  .calendar {
+    display: flex;
+    flex-wrap: nowrap;
+
+    .calendar-item {
+
+      span {
+        width: 100% !important;
+      }
+
+      .Zebra_DatePicker_Icon {
+        opacity: .6;
+      }
+
+    }
+
+    .left-input {
+      padding-right: 0;
+
+      .form-control {
+        border-right: none;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        background: #fff;
+
+        @media screen and (max-width: 576px) {
+          padding-right: 1px;
+        }
+
+        @media screen and (max-width: 480px) {
+          font-size: .875rem;
+        }
+
+        &:focus {
+          border-color: #fff;
+          box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, .25);
+        }
+      }
+
+    }
+    .right-input {
+      padding-left: 0;
+      border-left: none;
+
+      .form-control {
+        border-left: none;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        background: #fff;
+
+        @media screen and (max-width: 576px) {
+          padding-right: 1px;
+        }
+
+        @media screen and (max-width: 480px) {
+          font-size: .875rem;
+        }
+
+        &:focus {
+          border-color: #fff;
+          box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, .25);
+        }
+      }
+
+    }
+  }
+
+  .dropdown {
+    .dropdown-toggle {
+      color: #495057;
+      margin-top: 5px;
+
+      @media screen and (max-width: 992px) {
+        font-size: .875rem;
+      }
+    }
+  }
+
+}

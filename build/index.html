@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/zebra_datepicker@latest/dist/css/bootstrap/zebra_datepicker.min.css">
+    <title>Home</title>
+
+</head>
+<body>
+
+<div class="container head">
+    <div class="btn-toolbar d-none d-md-block" role="toolbar" aria-label="Toolbar with button groups">
+        <div class="btn-group d-flex" role="group" aria-label="First group">
+            <button type="button" class="btn btn-secondary">Пакетные туры</button>
+            <button type="button" class="btn btn-secondary is-active">Экскурсионные туры</button>
+            <button type="button" class="btn btn-secondary">Билеты</button>
+            <button type="button" class="btn btn-secondary">Отели</button>
+        </div>
+    </div>
+    <div class="btn-group d-md-none" role="group">
+        <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+            Экскурсионные туры
+        </button>
+        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <a class="dropdown-item" href="#">Пакетные туры</a>
+            <a class="dropdown-item" href="#">Билеты</a>
+            <a class="dropdown-item" href="#">Отели</a>
+        </div>
+    </div>
+    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+        <div class="btn-group d-flex justify-content-center" role="group" aria-label="First group">
+            <button type="button" class="btn btn-secondary is-active"><i class="fas fa-heart fa-fw mr-sm-1"></i><span
+                    class="d-none d-sm-inline-block">Избранные
+                туры</span>
+            </button>
+            <button type="button" class="btn btn-secondary entrance"><i class="fas fa-user fa-fw mr-1"></i>Вход</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <form class="module-tours">
+        <div class="col col-md-8">
+            <div class="form-group">
+                <label for="inputCountry">Куда</label>
+                <select id="inputCountry" class="form-control">
+                    <option>Страна</option>
+                    <option>...</option>
+                </select>
+            </div>
+            <div class="row mb-2">
+                <div class="col-12 col-sm-6 mb-2">
+                    <label for="datepicker-range-start">Дата начала тура</label>
+                    <div class="row calendar">
+                        <div class="col left-input">
+                            <div class="input-group calendar-item input-daterange">
+                                <input type="text" class="form-control" id="datepicker-range-start" placeholder="01.02">
+                                <div class="input-group-append"></div>
+                            </div>
+                        </div>
+
+                        <div class="col right-input">
+                            <div class="input-group calendar-item input-daterange">
+                                <input type="text" class="form-control datepicker" id="datepicker-range-end"
+                                       placeholder="05.02">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <label for="inputDirections">Проезд</label>
+                    <select id="inputDirections" class="form-control">
+                        <option>Включен</option>
+                        <option>...</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="col col-md-4">
+            <div class="form-group">
+                <label for="inputCity">Откуда</label>
+                <select id="inputCity" class="form-control">
+                    <option>Киев</option>
+                    <option>...</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-secondary w-100 btn-lg btn-search">Найти</button>
+            <div class="dropdown">
+                <a class="dropdown-toggle d-block text-center" href="#" role="button" id="dropdownMenuLink"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Больше параметров поиска
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>window.jQuery || document.write('<script src="path/to/jquery-3.3.1.js"><\/script>')</script>
+<script src="https://cdn.jsdelivr.net/npm/zebra_datepicker@latest/dist/zebra_datepicker.min.js"></script>
+
+<script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"
+        integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy"
+        crossorigin="anonymous"></script>
+<script src="assets/js/custom.js"></script>
+</body>
+</html>
